@@ -36,8 +36,8 @@ Precision for `datetime.date` is days.
 import datetime
 from RelativeToNow import relative_to_now
 
-print(relative_to_now(datetime.date.today() - datetime.timedelta(days=1)))
->>> 1 day ago
+print(relative_to_now(datetime.date.today() - datetime.timedelta(days=2)))
+>>> 2 days ago
 ```
 
 ```python
@@ -45,5 +45,5 @@ import time
 from RelativeToNow import relative_to_now
 
 print(relative_to_now(time.time()))
->>> 0 seconds from now
+>>> just now
 ```

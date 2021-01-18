@@ -58,7 +58,10 @@ def relative_to_now(start_date):
 
     seconds = abs_seconds // 1
 
-    if seconds < 60:
+    if seconds == 0:
+        return "just now"
+
+    elif seconds < 60:
         unit = "second" if seconds == 1 else "seconds"
         return "%s %s %s" % (seconds, unit, my_text)
 

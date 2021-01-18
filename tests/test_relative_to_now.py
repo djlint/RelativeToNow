@@ -42,4 +42,4 @@ def test_date():
 
 def test_time():
     """Test time."""
-    assert relative_to_now(time.time()) == "0 seconds from now"
+    assert relative_to_now(time.time()) == "just now"
