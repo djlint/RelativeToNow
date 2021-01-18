@@ -5,7 +5,7 @@ with open("README.md", mode="r", encoding="utf-8") as f:
 
 setup(
     name="relative_to_now",
-    version="0.0.2",
+    version="0.0.3",
     description="Print a datetimes distance from now",
     long_description=readme,
     long_description_content_type="text/markdown",
@@ -20,5 +20,5 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Programming Language :: Python :: 3",
     ],
-    python_requires='>=3.7',
+    python_requires=">=3.6",
 )
