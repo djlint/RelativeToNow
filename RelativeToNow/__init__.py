@@ -42,11 +42,16 @@ import time
 
 def relative_to_now(start_date):
     if isinstance(start_date, datetime.datetime):
-        diff = datetime.datetime.now() - start_date
+        if start_date.tzinfo:
+            diff = datetime.datetime.now(start_date.tzinfo) - start_date
+        else:
+            diff = datetime.datetime.now() - start_date
         abs_seconds = diff.days * 3600 * 24 + diff.seconds
+
     elif isinstance(start_date, datetime.date):
         diff = datetime.date.today() - start_date
         abs_seconds = diff.days * 3600 * 24 + diff.seconds
+
     elif isinstance(start_date, float):  # noqa: SIM106
         abs_seconds = int(time.time() - start_date)
 

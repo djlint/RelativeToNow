@@ -23,6 +23,13 @@ def test_datetime():
         == "2 minutes ago"
     )
 
+    assert (
+        relative_to_now(
+            datetime.datetime.now().astimezone() - datetime.timedelta(hours=5)
+        )
+        == "5 hours ago"
+    )
+
 
 def test_date():
     """Test datetime.date."""
