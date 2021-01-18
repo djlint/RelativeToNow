@@ -2,6 +2,18 @@
 
 Convert date/time into a string relative to now.
 
+## Install
+
+```sh
+python -m pip install RelativeToNow
+
+# or
+
+poetry add RelativeToNow
+```
+
+## How to Use
+
 Possible input types:
 * time.time()
 * datetime.date.today()
