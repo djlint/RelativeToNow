@@ -5,7 +5,7 @@ with open("README.md", mode="r", encoding="utf-8") as f:
 
 setup(
     name="relative_to_now",
-    version="0.0.4",
+    version="0.0.5",
     description="Print a datetimes distance from now",
     long_description=readme,
     long_description_content_type="text/markdown",
