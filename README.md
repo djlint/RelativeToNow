@@ -5,11 +5,11 @@ Convert date/time into a string relative to now.
 ## Install
 
 ```sh
-python -m pip install RelativeToNow
+python -m pip install relative-to-now
 
 # or
 
-poetry add RelativeToNow
+poetry add relative-to-now
 ```
 
 ## How to Use
