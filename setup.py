@@ -11,7 +11,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Riverside-Healthcare/RelativeToNow",
     author="Christopher Pickering",
-    author_email="cpickering@rhc.net",
     license="GPL-3.0-or-later",
     packages=["RelativeToNow"],
     classifiers=[
