@@ -62,6 +62,12 @@ def relative_to_now(start_date):
     return convert(abs_seconds, start_date)
 
 
+def build_string(unit, value, my_text):
+    """Build string from params."""
+    unit = unit if value == 1 else unit + "s"
+    return "%s %s %s" % (value, unit, my_text)
+
+
 def convert(abs_seconds, output):
     """Convert date to string."""
     my_text = "ago" if abs_seconds > 0 else "from now"
@@ -78,27 +84,21 @@ def convert(abs_seconds, output):
         output = "just now"
 
     elif seconds < 60:
-        unit = "second" if seconds == 1 else "seconds"
-        output = "%s %s %s" % (seconds, unit, my_text)
+        output = build_string("second", seconds, my_text)
 
     elif minutes < 60:
-        unit = "minute" if minutes == 1 else "minutes"
-        output = "%s %s %s" % (minutes, unit, my_text)
+        output = build_string("minute", minutes, my_text)
 
     elif hours < 24:
-        unit = "hour" if hours == 1 else "hours"
-        output = "%s %s %s" % (hours, unit, my_text)
+        output = build_string("hour", hours, my_text)
 
     elif days < 7:
-        unit = "day" if days == 1 else "days"
-        output = "%s %s %s" % (days, unit, my_text)
+        output = build_string("day", days, my_text)
 
     elif weeks < 52:
-        unit = "week" if weeks == 1 else "weeks"
-        output = "%s %s %s" % (weeks, unit, my_text)
+        output = build_string("week", weeks, my_text)
 
     elif years >= 1:
-        unit = "year" if years == 1 else "years"
-        output = "%s %s %s" % (years, unit, my_text)
+        output = build_string("year", years, my_text)
 
     return output
