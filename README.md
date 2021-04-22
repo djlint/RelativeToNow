@@ -1,8 +1,5 @@
-
 [![Build Status](https://travis-ci.com/Riverside-Healthcare/RelativeToNow.svg?branch=master)](https://travis-ci.com/Riverside-Healthcare/RelativeToNow)
-
 [![codecov](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow/branch/master/graph/badge.svg?token=PHYGI9FI22)](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow)
-
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2533c8838ffe4c6a82c889d6d98f2050)](https://www.codacy.com/gh/Riverside-Healthcare/RelativeToNow/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Riverside-Healthcare/RelativeToNow&amp;utm_campaign=Badge_Grade)
 
 
