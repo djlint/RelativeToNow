@@ -65,38 +65,36 @@ def relative_to_now(start_date):
 
     seconds = abs_seconds // 1
 
-    output = start_date
-
     if seconds == 0:
-        output = "just now"
+        return "just now"
 
     elif seconds < 60:
         unit = "second" if seconds == 1 else "seconds"
-        output = "%s %s %s" % (seconds, unit, my_text)
+        return "%s %s %s" % (seconds, unit, my_text)
 
     minutes = abs_seconds // 60
     if minutes < 60:
         unit = "minute" if minutes == 1 else "minutes"
-        output = "%s %s %s" % (minutes, unit, my_text)
+        return "%s %s %s" % (minutes, unit, my_text)
 
     hours = abs_seconds // 3600
     if hours < 24:
         unit = "hour" if hours == 1 else "hours"
-        output = "%s %s %s" % (hours, unit, my_text)
+        return "%s %s %s" % (hours, unit, my_text)
 
     days = abs_seconds // (3600 * 24)
     if days < 7:
         unit = "day" if days == 1 else "days"
-        output = "%s %s %s" % (days, unit, my_text)
+        return "%s %s %s" % (days, unit, my_text)
 
     weeks = abs_seconds // (3600 * 24 * 7)
     if weeks < 52:
         unit = "week" if weeks == 1 else "weeks"
-        output = "%s %s %s" % (weeks, unit, my_text)
+        return "%s %s %s" % (weeks, unit, my_text)
 
     years = abs_seconds // (3600 * 24 * 365)
     if years >= 1:
         unit = "year" if years == 1 else "years"
-        output = "%s %s %s" % (years, unit, my_text)
+        return "%s %s %s" % (years, unit, my_text)
 
-    return output
+    return start_date
