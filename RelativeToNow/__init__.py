@@ -41,7 +41,7 @@ import time
 
 
 def relative_to_now(start_date):
-    """Convert datetime/time to string."""
+    """Verify date and return converted."""
     if isinstance(start_date, datetime.datetime):
         if start_date.tzinfo:
             diff = datetime.datetime.now(start_date.tzinfo) - start_date
@@ -59,6 +59,11 @@ def relative_to_now(start_date):
     else:
         raise Exception("type must be date or datetime.")
 
+    return convert(abs_seconds, start_date)
+
+
+def convert(abs_seconds, start_date):
+    """Convert date to string."""
     my_text = "ago" if abs_seconds > 0 else "from now"
     abs_seconds = abs(abs_seconds)
 

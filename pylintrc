@@ -1,5 +1,5 @@
 [messages control]
-disable = C0114, C0116, C0103
+disable = C0114, C0116, C0103, R0911, R0912
 
 [format]
 max-line-length = 99
