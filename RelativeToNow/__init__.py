@@ -1,4 +1,5 @@
-"""Convert date/time into a string relative to now.
+"""
+Convert date/time into a string relative to now.
 
 Possible input types:
 * time.time()
@@ -41,6 +42,7 @@ import time
 
 
 def relative_to_now(start_date):
+    """Convert datetime/time to string."""
     if isinstance(start_date, datetime.datetime):
         if start_date.tzinfo:
             diff = datetime.datetime.now(start_date.tzinfo) - start_date
@@ -63,36 +65,38 @@ def relative_to_now(start_date):
 
     seconds = abs_seconds // 1
 
+    output = start_date
+
     if seconds == 0:
-        return "just now"
+        output = "just now"
 
     elif seconds < 60:
         unit = "second" if seconds == 1 else "seconds"
-        return "%s %s %s" % (seconds, unit, my_text)
+        output = "%s %s %s" % (seconds, unit, my_text)
 
     minutes = abs_seconds // 60
     if minutes < 60:
         unit = "minute" if minutes == 1 else "minutes"
-        return "%s %s %s" % (minutes, unit, my_text)
+        output = "%s %s %s" % (minutes, unit, my_text)
 
     hours = abs_seconds // 3600
     if hours < 24:
         unit = "hour" if hours == 1 else "hours"
-        return "%s %s %s" % (hours, unit, my_text)
+        output = "%s %s %s" % (hours, unit, my_text)
 
     days = abs_seconds // (3600 * 24)
     if days < 7:
         unit = "day" if days == 1 else "days"
-        return "%s %s %s" % (days, unit, my_text)
+        output = "%s %s %s" % (days, unit, my_text)
 
     weeks = abs_seconds // (3600 * 24 * 7)
     if weeks < 52:
         unit = "week" if weeks == 1 else "weeks"
-        return "%s %s %s" % (weeks, unit, my_text)
+        output = "%s %s %s" % (weeks, unit, my_text)
 
     years = abs_seconds // (3600 * 24 * 365)
     if years >= 1:
         unit = "year" if years == 1 else "years"
-        return "%s %s %s" % (years, unit, my_text)
+        output = "%s %s %s" % (years, unit, my_text)
 
-    return start_date
+    return output

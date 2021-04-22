@@ -1,3 +1,11 @@
+
+[![Build Status](https://travis-ci.com/Riverside-Healthcare/RelativeToNow.svg?branch=master)](https://travis-ci.com/Riverside-Healthcare/RelativeToNow)
+
+[![codecov](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow/branch/master/graph/badge.svg?token=PHYGI9FI22)](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow)
+
+
+
+
 # Relative To Now
 
 Convert date/time into a string relative to now.
@@ -15,9 +23,10 @@ poetry add relative-to-now
 ## How to Use
 
 Possible input types:
-* time.time()
-* datetime.date.today()
-* datetime.datetime.now()
+
+  * time.time()
+  * datetime.date.today()
+  * datetime.datetime.now()
 
 Output:
     <int> <unit> <text>
