@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", mode="r", encoding="utf-8") as f:
     readme = f.read()
@@ -12,7 +12,7 @@ setup(
     url="https://github.com/Riverside-Healthcare/RelativeToNow",
     author="Christopher Pickering",
     license="GPL-3.0-or-later",
-    packages=["RelativeToNow"],
+    packages=find_packages(),
     classifiers=[
         "Operating System :: OS Independent",
         "Development Status :: 5 - Production/Stable",

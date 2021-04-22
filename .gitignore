@@ -20,3 +20,6 @@ MANIFEST
 .tox
 .python-version
 .pytest_cache
+.coverage
+coverage.xml
+report.xml
