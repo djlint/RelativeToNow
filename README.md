@@ -27,6 +27,10 @@ Possible input types:
   * datetime.date.today()
   * datetime.datetime.now()
 
+Optional inputs:
+
+  * ``no_errors`` (Defaults to ``False``, set to ``True`` to return value when there is an error instead of raising)
+
 Output:
     <int> <unit> <text>
 

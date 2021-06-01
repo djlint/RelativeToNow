@@ -40,7 +40,7 @@ import datetime
 import time
 
 
-def relative_to_now(start_date):
+def relative_to_now(start_date, no_error=False):
     """Verify date and return converted."""
     if isinstance(start_date, datetime.datetime):
         if start_date.tzinfo:
@@ -57,6 +57,9 @@ def relative_to_now(start_date):
         abs_seconds = int(time.time() - start_date)
 
     else:
+        if no_error:
+            return start_date
+
         raise Exception("type must be date or datetime.")
 
     return convert(abs_seconds, start_date)
