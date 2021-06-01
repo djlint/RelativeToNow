@@ -81,6 +81,7 @@ def convert(abs_seconds, output):
     hours = abs_seconds // 3600
     days = abs_seconds // (3600 * 24)
     weeks = abs_seconds // (3600 * 24 * 7)
+    months = int(abs_seconds // (3600 * 24 * 7 * (365 / 12 / 7)))
     years = abs_seconds // (3600 * 24 * 365)
 
     if seconds == 0:
@@ -98,8 +99,11 @@ def convert(abs_seconds, output):
     elif days < 7:
         output = build_string("day", days, my_text)
 
-    elif weeks < 52:
+    elif weeks < 5:
         output = build_string("week", weeks, my_text)
+
+    elif months < 12:
+        output = build_string("month", months, my_text)
 
     elif years >= 1:
         output = build_string("year", years, my_text)
