@@ -58,6 +58,16 @@ def test_datetime():
         == "1 year ago"
     )
 
+    assert (
+        relative_to_now(datetime.datetime.now() + datetime.timedelta(days=36))
+        == "1 month from now"
+    )
+
+    assert (
+        relative_to_now(datetime.datetime.now() - datetime.timedelta(days=70))
+        == "2 months ago"
+    )
+
 
 def test_date():
     """Test datetime.date."""
