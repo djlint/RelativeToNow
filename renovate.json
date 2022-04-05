@@ -9,18 +9,14 @@
     ":npm",
     "npm:unpublishSafe"
   ],
-  "packageRules": [
-    {
-      "assignees": [
-        "christopherpickering",
-      ],
-      "assigneesSampleSize": 2,
-      "bumpVersion": "patch",
-      "commitMessagePrefix": "chore(deps)",
-      "labels": [
-        "maintenance", 
-        "renovate"
-      ]
-    }
+  "assignees": [
+    "christopherpickering",
+  ],
+  "assigneesSampleSize": 2,
+  "bumpVersion": "patch",
+  "commitMessagePrefix": "chore(deps)",
+  "labels": [
+    "maintenance", 
+    "renovate"
   ]
 }
