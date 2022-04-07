@@ -68,7 +68,7 @@ def relative_to_now(start_date, no_error=False):
 def build_string(unit, value, my_text):
     """Build string from params."""
     unit = unit if value == 1 else unit + "s"
-    return "%s %s %s" % (value, unit, my_text)
+    return f"{value} {unit} {my_text}"
 
 
 def convert(abs_seconds, output):
