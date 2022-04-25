@@ -1,16 +1,28 @@
-[![Python Version](https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://pypi.org/project/relative-to-now/)
-[![Build Status](https://travis-ci.com/Riverside-Healthcare/RelativeToNow.svg?branch=master)](https://travis-ci.com/Riverside-Healthcare/RelativeToNow)
-[![codecov](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow/branch/master/graph/badge.svg?token=PHYGI9FI22)](https://codecov.io/gh/Riverside-Healthcare/RelativeToNow)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2533c8838ffe4c6a82c889d6d98f2050)](https://www.codacy.com/gh/Riverside-Healthcare/RelativeToNow/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Riverside-Healthcare/RelativeToNow&amp;utm_campaign=Badge_Grade)
-[![Code QL](https://github.com/Riverside-Healthcare/extract_management/workflows/CodeQL/badge.svg)](https://github.com/Riverside-Healthcare/extract_management/actions/workflows/codeql-analysis.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/9c289db00e2942b3ad8e/maintainability)](https://codeclimate.com/github/Riverside-Healthcare/RelativeToNow/maintainability)
-[![Downloads](https://img.shields.io/pypi/dm/relative-to-now.svg)](https://pypi.org/project/relative-to-now/)
 
-# Relative To Now
+<h1 align="center">Relative To Now</h1>
 
-Convert date/time into a string relative to now.
+<h4 align="center">Convert date/time into a string relative to now.</h4>
 
-## Install
+<p align="center">
+  <a href="https://pypi.org/project/relative-to-now/">
+    <img src="https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue" alt="Python Version">
+  </a>
+  <a href="https://codecov.io/gh/Riverside-Healthcare/RelativeToNow">
+    <img src="https://codecov.io/gh/Riverside-Healthcare/RelativeToNow/branch/master/graph/badge.svg?token=PHYGI9FI22" alt="Codecov Status">
+  </a>
+  <a href="https://www.codacy.com/gh/Riverside-Healthcare/RelativeToNow/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Riverside-Healthcare/RelativeToNow&amp;utm_campaign=Badge_Grade">
+    <img src="https://app.codacy.com/project/badge/Grade/2533c8838ffe4c6a82c889d6d98f2050" alt="Codacy Status">
+  </a>
+  <a href="https://pypi.org/project/relative-to-now/">
+    <img src="https://badgen.net/pypi/v/relative-to-now" alt="Pypi Download">
+  </a>
+  <a href="https://pepy.tech/project/relative-to-now">
+    <img src="https://static.pepy.tech/badge/relative-to-now" alt="Downloads">
+  </a>
+</p>
+
+
+## 💾 Install
 
 ```sh
 python -m pip install relative-to-now
@@ -20,7 +32,7 @@ python -m pip install relative-to-now
 poetry add relative-to-now
 ```
 
-## How to Use
+## ✨ How to Use
 
 Possible input types:
 

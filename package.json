@@ -1,0 +1,41 @@
+{
+  "name": "relative_to_now",
+  "version": "1.0.0",
+  "description": "Convert date/time into a string relative to now.",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add . && pre-commit run && git add . && cz --no-verify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riverside-Healthcare/RelativeToNow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riverside-Healthcare/RelativeToNow/issues"
+  },
+  "homepage": "https://github.com/Riverside-Healthcare/RelativeToNow#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^19.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

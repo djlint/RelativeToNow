@@ -1,0 +1,31 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool]
+
+[tool.poetry]
+name = "relative_to_now"
+version = "0.0.8"
+description = "Print a datetime's distance from now"
+authors = ["Christopher Pickering <cpickering@rhc.net>"]
+maintainers=["Christopher Pickering <cpickering@rhc.net>"]
+license = "GPL-3.0-or-later"
+readme="README.md"
+repository="https://github.com/Riverside-Healthcare/RelativeToNow"
+documentation="https://github.com/Riverside-Healthcare/RelativeToNow"
+classifiers=[
+        "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+        "Programming Language :: Python :: 3",
+    ]
+packages = [
+    { include = "RelativeToNow" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
