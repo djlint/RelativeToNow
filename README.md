@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://pypi.org/project/relative-to-now/">
-    <img src="https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue" alt="Python Version">
+    <img src="https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9-blue" alt="Python Version">
   </a>
   <a href="https://codecov.io/gh/Riverside-Healthcare/RelativeToNow">
     <img src="https://codecov.io/gh/Riverside-Healthcare/RelativeToNow/branch/master/graph/badge.svg?token=PHYGI9FI22" alt="Codecov Status">
