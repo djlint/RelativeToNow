@@ -7,7 +7,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "relative_to_now"
-version = "1.0.0"
+version = "1.1.0"
 description = "Print a datetime's distance from now"
 authors = ["Christopher Pickering <cpickering@rhc.net>"]
 maintainers=["Christopher Pickering <cpickering@rhc.net>"]
