@@ -13,6 +13,7 @@
     "christopherpickering"
   ],
   "bumpVersion": "patch",
+  "baseBranches": ["dev"],
   "commitMessagePrefix": "chore(deps)",
   "labels": [
     "maintenance",
