@@ -13,6 +13,7 @@
     "christopherpickering"
   ],
   "bumpVersion": "patch",
+  "baseBranches": ["dev"],
   "commitMessagePrefix": "chore(deps)",
   "labels": [
     "maintenance",
@@ -38,6 +39,6 @@
       "automerge": true
     }
   ],
-  "schedule": ["on monday before 8:00am"],
+  "schedule": ["before 10pm on Sunday"],
   "timezone": "America/Chicago"
 }
