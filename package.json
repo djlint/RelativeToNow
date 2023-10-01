@@ -1,6 +1,6 @@
 {
   "name": "relative_to_now",
-  "version": "1.1.25",
+  "version": "1.1.26",
   "description": "Convert date/time into a string relative to now.",
   "main": "index.js",
   "private": true,
@@ -27,11 +27,11 @@
     "@semantic-release/commit-analyzer": "11.0.0",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.0.6",
+    "@semantic-release/github": "9.2.1",
     "@semantic-release/npm": "11.0.0",
     "@semantic-release/release-notes-generator": "12.0.0",
     "cz-conventional-changelog": "3.3.0",
-    "semantic-release": "22.0.1"
+    "semantic-release": "22.0.5"
   },
   "config": {
     "commitizen": {
