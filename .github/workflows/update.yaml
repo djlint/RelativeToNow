@@ -4,8 +4,15 @@ on:
     branches:
     - dev
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions: {}
 jobs:
   master:
+    permissions:
+      contents: write # to push the promotion branch
+      pull-requests: write # to open the pull request
     runs-on: ubuntu-latest
     if: github.ref_name == 'dev'
     steps:

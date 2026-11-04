@@ -20,8 +20,14 @@ on:
   schedule:
     - cron: '16 7 * * 4'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions: {}
 jobs:
   analyze:
+    permissions:
+      security-events: write # to upload the results
     name: Analyze
     runs-on: ubuntu-latest
 
